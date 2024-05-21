@@ -1,4 +1,5 @@
 <script>
+  import { base } from "$app/paths";
   import { section, setSelection } from "$lib/stores.js";
 
 	let logo = "favicon.png";
@@ -57,7 +58,7 @@
 		<img src={logo} alt="logo" id="logo"/>
 	</a>
 	<nav id="menu">
-		<a on:click={() => setSelection(0)} class="{selection === 0 ? "menu-item-selected" : "menu-item"}" href=".">Sākums</a>
-		<a on:click={() => setSelection(1)} class="{selection === 1 ? "menu-item-selected" : "menu-item"}" href="./programmas">Programmas</a>
+		<a on:click={() => setSelection(0)} class="{selection === 0 ? "menu-item-selected" : "menu-item"}" href="{base}/">Sākums</a>
+		<a on:click={() => setSelection(1)} class="{selection === 1 ? "menu-item-selected" : "menu-item"}" href="{base}/programmas">Programmas</a>
 	</nav>
 </div>

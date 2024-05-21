@@ -1,4 +1,5 @@
 <script>
+  import { base } from "$app/paths";
   import ProgramItem from "./ProgramItem.svelte";
 
 </script>
@@ -20,7 +21,7 @@
   image = "lu-test-image.jpg"
   imageAlt = "lu ēka"
   title = "Datoriķi!"
-  link = "./programmas/datoriki"
+  link = "{base}/programmas/datoriki"
   description= "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus  velit mauris, eu dapibus mauris lobortis a. Nulla luctus justo diam, vel  cursus purus tempor id. Etiam efficitur risus quis odio consectetur, et  malesuada tellus condimentum. Aliquam in turpis quis augue laoreet  commodo. Morbi egestas, mauris id eleifend aliquet, tortor ex eleifend  ante, quis sollicitudin mi neque sit amet ante. Aliquam id pretium ex.  Aliquam quis orci in quam condimentum feugiat id eget nisl. Donec in  dapibus purus. Nam non dui leo. "
   />
   <ProgramItem 
@@ -28,7 +29,7 @@
   image = "lu-test-image.jpg"
   imageAlt = "lu ēka"
   title = "Ģeogrāfi!"
-  link = "./programmas/geografi"
+  link = "{base}/programmas/geografi"
   description= "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus  velit mauris, eu dapibus mauris lobortis a. Nulla luctus justo diam, vel  cursus purus tempor id. Etiam efficitur risus quis odio consectetur, et  malesuada tellus condimentum. Aliquam in turpis quis augue laoreet  commodo. Morbi egestas, mauris id eleifend aliquet, tortor ex eleifend  ante, quis sollicitudin mi neque sit amet ante. Aliquam id pretium ex.  Aliquam quis orci in quam condimentum feugiat id eget nisl. Donec in  dapibus purus. Nam non dui leo. "
   />
   <ProgramItem 
@@ -36,7 +37,7 @@
   image = "lu-test-image.jpg"
   imageAlt = "lu ēka"
   title = "Mediķi!"
-  link = "./programmas/mediki"
+  link = "{base}/programmas/mediki"
   description= "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus  velit mauris, eu dapibus mauris lobortis a. Nulla luctus justo diam, vel  cursus purus tempor id. Etiam efficitur risus quis odio consectetur, et  malesuada tellus condimentum. Aliquam in turpis quis augue laoreet  commodo. Morbi egestas, mauris id eleifend aliquet, tortor ex eleifend  ante, quis sollicitudin mi neque sit amet ante. Aliquam id pretium ex.  Aliquam quis orci in quam condimentum feugiat id eget nisl. Donec in  dapibus purus. Nam non dui leo. "
   />
 </div>

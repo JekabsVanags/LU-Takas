@@ -1,4 +1,6 @@
 <script>
+  import { base } from "$app/paths";
+
 
   import { darkMode, setSelection } from "$lib/stores.js";
 
@@ -79,7 +81,7 @@
         ex eleifend  ante, quis sollicitudin mi neque sit amet ante. Aliquam id pretium ex.  
         Aliquam quis orci in quam condimentum feugiat id eget nisl. Donec in  dapibus purus. Nam non dui leo. 
       </p>
-      <a href="./programmas" on:click={() => setSelection(1)} class={isDarkMode ? "dark-mode" : "light-mode"}>
+      <a href="{base}/programmas" on:click={() => setSelection(1)} class={isDarkMode ? "dark-mode" : "light-mode"}>
         Apskatīt atsauksmes!
       </a>
     </div>
