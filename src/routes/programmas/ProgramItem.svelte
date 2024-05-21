@@ -1,5 +1,5 @@
 <script>
-  import { darkMode } from "$lib/stores";
+  import { darkMode } from "$lib/stores.js";
 
   export let reversed = 0;
   export let title = "";

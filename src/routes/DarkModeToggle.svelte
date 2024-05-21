@@ -1,6 +1,6 @@
 <script>
 
-  import { darkMode, toggleDarkMode } from "$lib/stores";
+  import { darkMode, toggleDarkMode } from "$lib/stores.js";
 
   let isDarkMode;
 

@@ -1,5 +1,5 @@
 <script>
-  import { darkMode } from "$lib/stores";
+  import { darkMode } from "$lib/stores.js";
   import DarkModeToggle from "./DarkModeToggle.svelte";
   import Footer from "./Footer.svelte";
 	import Header from "./Header.svelte";
