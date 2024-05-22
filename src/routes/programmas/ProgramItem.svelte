@@ -19,6 +19,7 @@
   #container{
     display: flex;
     margin: 20px;
+    align-items: center;
   }
 
   #container.reversed{
@@ -28,10 +29,14 @@
   #description{
     padding: 20px;
     width: 28vw;
-    overflow: scroll;
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+
+  #description p{
+    max-height: 200px;
+    overflow: scroll;
   }
 
   #description.light-mode{
@@ -45,6 +50,7 @@
   img{
     width: 30vw;
     height: 300px;
+    object-fit: cover;
   }
 
 	@media (max-width: 800px) {
@@ -52,8 +58,12 @@
       flex-direction: column;
     }
 
+    #container.reversed{
+      flex-direction: column;
+    }
+
     #description{
-      padding: 0;
+      padding: 10px;
       width: 70vw;
     }
 
@@ -76,28 +86,28 @@
     font-weight: 600;
     text-decoration: none;
     text-align: center;
+    margin-left: 0px;
+    transition: margin-left 0.5s ease;
+  }
+  a:hover{
+    margin-left: 10px;
+    transition: margin-left 0.5s ease;
   }
   a.dark-mode{
     background-color: #C3D898;
     color: #1C3144;
   }
-  a:hover.dark-mode{
-    background-color: rgb(224, 235, 202);
-  }
   a.light-mode{
     background-color: #1C3144;
     color: #EAF1DB;
-  }
-  a:hover.light-mode{
-    background-color: #24394b;
   }
 </style>
 
 <div id="container" class={reversed == 0 ? "reversed" : ""}>
   <img src={image} alt={imageAlt}/>
   <div id="description" class={isDarkMode ? "dark-mode" : "light-mode"}>
-    <h1>{title}</h1>
-    <p>{description}</p>
+      <h1>{title}</h1>
+      <p>{description}</p>
     <a href={link} class={isDarkMode ? "dark-mode" : "light-mode"}>Lasīt vairāk!</a>
   </div>
 </div>

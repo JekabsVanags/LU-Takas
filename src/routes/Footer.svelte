@@ -11,6 +11,7 @@
 		align-items: center;
 		min-height: 15vh;
 		box-shadow: 0px 0px 20px black;
+		z-index: 1;
 	}
 
 	.section{
@@ -52,9 +53,6 @@
 	</div>
 
 	<div class="section">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus  
-			velit mauris, eu dapibus mauris lobortis a. Nulla luctus justo diam, vel  
-			cursus purus tempor id. Etiam efficitur risus quis odio consectetur, et  
-			malesuada tellus condimentum.</p>
+		<p>Mājaslapa izstrādāta studiju kursa "Tīmekļa dizaina pamati" ietvaros. Visi izmantotie teksti un attēli ir no studenta personīgajiem arhīviem. Darba izstrādātājs: Jēkabs Vanags. Tekstu par ģeogrāfiem autori: Kārlis Plostnieks, Una Ozola.</p>
 	</div>
 </div>

@@ -5,6 +5,7 @@
   import { darkMode, setSelection } from "$lib/stores.js";
 
   let isDarkMode;
+  let img = "trails.jpg";
 
   darkMode.subscribe((value) => {
     isDarkMode = value;
@@ -13,27 +14,34 @@
 </script>
 
 <style>
-
   #image-div{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 500px;
-  }
-  #image-div.light-mode{
-    background-image: -moz-linear-gradient(#1C3144, #1C3144);
-  }
-  #image-div.dark-mode{
-    background-image: -moz-linear-gradient(#6e7759, #515c39);
+    background-position: center; 
+    background-size: cover;
   }
 
-  #text-div{
-    width: 488px;
-    height: fit-content;
+  #text-div {
     display: flex;
+    flex: 1 1;
+    height: 100%;
+    padding-left: 35vw;
+    padding-right: 35vw;
+    justify-content: center;
     flex-direction: column;
     color: #EAF1DB;
+    background: rgba(0, 0, 0, 0.5);
   }
+  
+  @media(max-width: 800px){
+    #text-div{
+      padding-left: 10vw;
+      padding-right: 10vw;
+    }
+  }
+
 
   h1 {
     margin: 0px;
@@ -51,26 +59,26 @@
     font-weight: 600;
     text-decoration: none;
     text-align: center;
+    margin-left: 0px;
+    transition: margin-left 0.5s ease;
   }
   a.light-mode{
-    background-color: #C3D898;
-    color: #1C3144;
-  }
-  a:hover.light-mode{
-    background-color: rgb(224, 235, 202);
-  }
-  a.dark-mode{
     background-color: #1C3144;
     color: #EAF1DB;
   }
-  a:hover.dark-mode{
-    background-color: #24394b;
+  a.dark-mode{
+    background-color: #C3D898;
+    color: #1C3144;
+  }
+  a:hover{
+    margin-left: 10px;
+    transition: margin-left 0.5s ease;
   }
 
 </style>
 
 <div>
-  <div id="image-div" class={isDarkMode ? "dark-mode" : "light-mode"}>
+  <div id="image-div" style="background-image: url({img})">
     <div id="text-div">
       <h1>LU TAKAS</h1>
       <p>
