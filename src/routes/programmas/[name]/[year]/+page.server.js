@@ -142,19 +142,54 @@ export function load({ params }) {
       year_slug: "3",
       max_years: "4",
       name: "Datoriķu kursi",
-      img: `${base}/trails.jpg`
+      img: `${base}/trails.jpg`,
+      courses_fall: [],
+      courses_spring: []
     },
     {
       programme_slug: "datoriki",
       year_slug: "4",
       max_years: "4",
       name: "Datoriķu kursi",
-      img: `${base}/trails.jpg`
+      img: `${base}/trails.jpg`,
+      courses_fall: [],
+      courses_spring: []
+    },
+    {
+      programme_slug: "geografi",
+      year_slug: "1",
+      max_years: "3",
+      name: "Geogrāfu kursi",
+      img: `${base}/trails.jpg`,
+      courses_fall: [],
+      courses_spring: []
+    },
+    {
+      programme_slug: "geografi",
+      year_slug: "2",
+      max_years: "3",
+      name: "Geogrāfu kursi",
+      img: `${base}/trails.jpg`,
+      courses_fall: [],
+      courses_spring: []
+    },
+    {
+      programme_slug: "geografi",
+      year_slug: "3",
+      max_years: "3",
+      name: "Geogrāfu kursi",
+      img: `${base}/trails.jpg`,
+      courses_fall: [],
+      courses_spring: []
     }
   ]
 
   const year = years.find((year) => year.programme_slug === params.name && year.year_slug === params.year);
 
+  if (!year) {
+    // If year is not found, return a 404 error
+    return error(404, `Year not found: ${params.name}/${params.year}`);
+  }
 
   return year;
 }

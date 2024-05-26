@@ -22,7 +22,7 @@ export function load({ params }) {
       name: "Medicīnas studenti...",
       description: "Mediķi... Tie kas pārdevuši savu dvēseli uz 6 gadiem + rezidentūru. Bet ja tu sevī jūti aicinājumu palīdzēt cilvēkiem, vai ceri uz labu algu pēc studiju pabeigšanas, varbūt ir tā vērts pamēģināt!",
       img: `${base}/trails.jpg`,
-      years: 6
+      years: 0
     },
   ]
 
