@@ -116,7 +116,7 @@
     {data.name}
   </h1>
   <div>
-    <div class="scrollable" on:mouseenter={startScrolling} on:mouseleave={stopScrolling}>
+    <div class="scrollable" role="dialog" on:mouseenter={startScrolling} on:mouseleave={stopScrolling}>
       {#each data.courses_fall as {img, altText, title, teaser, content}}
         <ImageScrollEffect image={img} altText={altText} title={title} teaser={teaser} content={content} stopScrolling={stopScrolling}/>
       {/each}
@@ -128,7 +128,7 @@
     </div>
   </div>
   <div>
-    <div class="scrollable" on:mouseenter={startScrolling} on:mouseleave={stopScrolling}>
+    <div class="scrollable" role="dialog" on:mouseenter={startScrolling} on:mouseleave={stopScrolling}>
       {#each data.courses_spring as {img, altText, title, teaser, content}}
         <ImageScrollEffect image={img} altText={altText} title={title} teaser={teaser} content={content} stopScrolling={stopScrolling}/>
       {/each}
