@@ -47,9 +47,10 @@
     display: flex;
     flex: 1;
     justify-content: space-evenly;
-    align-items:normal;
-    position: relative;
-    bottom:120px;
+    align-items:end;
+    position: absolute;
+    bottom:100px;
+    width: 100vw;
   }
 
   @media(max-width: 800px){

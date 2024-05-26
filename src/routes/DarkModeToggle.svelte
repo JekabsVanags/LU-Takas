@@ -12,7 +12,7 @@
 
 <style>
   button{
-    position: sticky;
+    position: absolute;
     bottom: 20px;
     left: 20px;
     height: 40px;
@@ -20,6 +20,7 @@
     border-radius: 100px;
     border-width: 0px;
     margin: 20px;
+    z-index: 20;
   }
   button.light-mode{
     background-color: #1C3144;

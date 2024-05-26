@@ -1,7 +1,6 @@
 <script>
   import { base } from "$app/paths";
 
-
   import { darkMode, setSelection } from "$lib/stores.js";
 
   let isDarkMode;

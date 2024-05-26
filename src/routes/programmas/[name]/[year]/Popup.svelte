@@ -1,0 +1,114 @@
+<script>
+  import { darkMode } from "$lib/stores";
+
+  export let close;
+  export let title;
+  export let content;
+  export let img;
+  export let imgAlt;
+
+  let isDarkMode;
+
+  darkMode.subscribe((value) => {
+    isDarkMode = value;
+  });
+
+</script>
+
+<style>
+  .obscure{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    border: none;
+  }
+
+  .popup.dark-mode{
+    color: #EAF1DB;
+    background-color: #1C3144;
+  }
+
+  .popup.light-mode{
+    color: #1C3144;
+    background-color: #EAF1DB;;
+  }
+  .popup{
+    background-color: white;
+    position: fixed;
+    width: 70%;
+    height: 70%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    padding: 0px;
+  }
+
+  .description{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 30px;
+  }
+  img{
+    width: 30%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @media(max-width: 800px){
+    .popup{
+      flex-direction: column;
+    }
+    .description{
+      width: 100%;
+    }
+    img{
+      width: 100%;
+      height: 20%;
+    }
+  }
+  button.close{
+    background-color: white;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    border: none;
+    border-radius: 100px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+  }
+  button.close:hover{
+    font-weight: 800;
+  }
+  .close.light-mode{
+    background-color: #1C3144;
+    color: #EAF1DB;
+  }
+</style>
+
+<button class="obscure" on:click={close}>
+  <button class="popup {isDarkMode ? "dark-mode" : "light-mode"}" on:click|stopPropagation>
+    <button class="close {isDarkMode ? "dark-mode" : "light-mode"}" on:click={close}>
+      X
+    </button>
+    <img src={img} alt={imgAlt}/>
+    <div class="description">
+      <h1>
+        {title}
+      </h1>
+      <p>
+        {content}
+      </p>
+    </div>
+  </button>
+</button>

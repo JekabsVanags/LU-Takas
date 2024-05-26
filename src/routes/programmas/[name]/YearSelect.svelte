@@ -13,20 +13,19 @@
 
 <style>
   .card{
-    height: 320px;
+    height: 300px;
     width: 20vw;
     max-width: 150px;
     padding-left: 20px;
     position: relative;
-    bottom: 0px;
-    transition: bottom 0.5s ease, height 0.5s ease;
+    padding-bottom: 0px;
+    transition: padding-bottom 0.5s ease;
     text-decoration: none;
   }
   .card:hover{
-    height: 340px;
     position: relative;
-    bottom: 30px;
-    transition: bottom 0.5s ease, height 0.5s ease;
+    padding-bottom: 30px;
+    transition: padding-bottom 0.5s ease;
   }
 
   @media(max-width: 800px){
