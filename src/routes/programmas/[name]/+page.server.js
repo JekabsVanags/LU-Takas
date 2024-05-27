@@ -1,3 +1,4 @@
+import { base } from '$app/paths';
 import { error } from '@sveltejs/kit';
 
 export function load({ params }) {
@@ -6,7 +7,7 @@ export function load({ params }) {
       slug: "datoriki",
       name: "Datoriķi!",
       description: "Datorzinātnes ir programma kur iet tad ja kaut bišķi interesē datori, un nāktonē vēlies pelnīt lielas naudas! Ne velti kursu ikgadu sāk nu jau krietni vairāk kā 200 studentu, tomēr ņem vērā, kvalifikācijas darbu aizstāvēs labi ja puse. Par Bakalaura iegušanu nerunājot!",
-      img: `../trails.jpg`,
+      img: `${base}/../trails.jpg`,
       years: 4
     },
     {
