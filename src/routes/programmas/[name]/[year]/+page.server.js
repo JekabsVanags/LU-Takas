@@ -87,7 +87,7 @@ export function load({ params }) {
       courses_fall: [
         {
           title: "Algoritmu teorija",
-          img: `${base}/trails.jpg`,
+          img: `../${base}/test.webp`,
           altText: "alt1",
           teaser: "Something something",
           description: "longer description",
@@ -95,7 +95,7 @@ export function load({ params }) {
         },
         {
           title: "Programmēšana I",
-          img: `${base}/trails.jpg`,
+          img: `../${base}/test.webp`,
           altText: "alt1",
           teaser: "Something something",
           description: "longer description",
@@ -103,7 +103,7 @@ export function load({ params }) {
         },
         {
           title: "Tīmekļa tehnoloģijas",
-          img: `${base}/trails.jpg`,
+          img: `../${base}/test.webp`,
           altText: "alt1",
           teaser: "Something something",
           description: "longer description",
@@ -113,7 +113,7 @@ export function load({ params }) {
       courses_spring: [
         {
           title: "Matemātiskā analīze",
-          img: `${base}/trails.jpg`,
+          img: `../${base}/test.webp`,
           altText: "alt1",
           teaser: "Something something",
           description: "longer description",
@@ -121,7 +121,7 @@ export function load({ params }) {
         },
         {
           title: "Tīmekļa tehnoloģijas II",
-          img: `${base}/trails.jpg`,
+          img: `../${base}/test.webp`,
           altText: "alt1",
           teaser: "Something something",
           description: "longer description",
@@ -129,7 +129,15 @@ export function load({ params }) {
         },
         {
           title: "Tīmekļa tehnoloģijas II",
-          img: `${base}/trails.jpg`,
+          img: `../${base}/test.webp`,
+          altText: "alt1",
+          teaser: "Something something",
+          description: "longer description",
+          content: "content"
+        },
+        {
+          title: "Tīmekļa tehnoloģijas III",
+          img: `../${base}/test.webp`,
           altText: "alt1",
           teaser: "Something something",
           description: "longer description",
