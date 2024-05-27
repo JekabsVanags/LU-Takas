@@ -113,7 +113,7 @@ export function load({ params }) {
       courses_spring: [
         {
           title: "Matemātiskā analīze",
-          img: `../test.webp`,
+          img: `../../test.webp`,
           altText: "alt1",
           teaser: "Something something",
           description: "longer description",
@@ -121,7 +121,7 @@ export function load({ params }) {
         },
         {
           title: "Tīmekļa tehnoloģijas II",
-          img: `../${base}/test.webp`,
+          img: `../../test.webp`,
           altText: "alt1",
           teaser: "Something something",
           description: "longer description",
@@ -129,7 +129,7 @@ export function load({ params }) {
         },
         {
           title: "Tīmekļa tehnoloģijas II",
-          img: `../${base}/test.webp`,
+          img: `../../test.webp`,
           altText: "alt1",
           teaser: "Something something",
           description: "longer description",
@@ -137,7 +137,7 @@ export function load({ params }) {
         },
         {
           title: "Tīmekļa tehnoloģijas III",
-          img: `../${base}/test.webp`,
+          img: `../../test.webp`,
           altText: "alt1",
           teaser: "Something something",
           description: "longer description",
