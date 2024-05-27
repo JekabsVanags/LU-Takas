@@ -7,7 +7,7 @@ export function load({ params }) {
       slug: "datoriki",
       name: "Datoriķi!",
       description: "Datorzinātnes ir programma kur iet tad ja kaut bišķi interesē datori, un nāktonē vēlies pelnīt lielas naudas! Ne velti kursu ikgadu sāk nu jau krietni vairāk kā 200 studentu, tomēr ņem vērā, kvalifikācijas darbu aizstāvēs labi ja puse. Par Bakalaura iegušanu nerunājot!",
-      img: `../${base}/trails.jpg`,
+      img: `../${base}/test.webp`,
       years: 4
     },
     {
