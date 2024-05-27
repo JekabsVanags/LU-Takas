@@ -8,11 +8,11 @@ export function load({ params }) {
       year_slug: "1",
       max_years: "4",
       name: "Datoriķu kursi",
-      img: `${base}/trails.jpg`,
+      img: `../../trails.jpg`,
       courses_fall: [
         {
           title: "Algoritmu teorija",
-          img: `${base}/trails.jpg`,
+          img: `../../trails.jpg`,
           altText: "alt1",
           teaser: "Something something",
           description: "longer description",
@@ -20,7 +20,7 @@ export function load({ params }) {
         },
         {
           title: "Programmēšana I",
-          img: `${base}/trails.jpg`,
+          img: `../../trails.jpg`,
           altText: "alt1",
           teaser: "Something something",
           description: "longer description",
@@ -28,7 +28,7 @@ export function load({ params }) {
         },
         {
           title: "Tīmekļa tehnoloģijas",
-          img: `${base}/trails.jpg`,
+          img: `../../trails.jpg`,
           altText: "alt1",
           teaser: "Something something",
           description: "longer description",
@@ -36,7 +36,7 @@ export function load({ params }) {
         },
         {
           title: "Tīmekļa tehnoloģijas",
-          img: `${base}/trails.jpg`,
+          img: `../../trails.jpg`,
           altText: "alt1",
           teaser: "Something something",
           description: "longer description",
@@ -44,7 +44,7 @@ export function load({ params }) {
         },
         {
           title: "Tīmekļa tehnoloģijas",
-          img: `${base}/trails.jpg`,
+          img: `../../trails.jpg`,
           altText: "alt1",
           teaser: "Something something",
           description: "longer description",
@@ -52,7 +52,7 @@ export function load({ params }) {
         },
         {
           title: "Tīmekļa tehnoloģijas",
-          img: `${base}/trails.jpg`,
+          img: `../../trails.jpg`,
           altText: "alt1",
           teaser: "Something something",
           description: "longer description",
@@ -62,7 +62,7 @@ export function load({ params }) {
       courses_spring: [
         {
           title: "Matemātiskā analīze",
-          img: `${base}/trails.jpg`,
+          img: `../../trails.jpg`,
           altText: "alt1",
           teaser: "Something something",
           description: "longer description",
@@ -70,7 +70,7 @@ export function load({ params }) {
         },
         {
           title: "Tīmekļa tehnoloģijas II",
-          img: `${base}/trails.jpg`,
+          img: `../../trails.jpg`,
           altText: "alt1",
           teaser: "Something something",
           description: "longer description",
@@ -83,11 +83,11 @@ export function load({ params }) {
       year_slug: "2",
       max_years: "4",
       name: "Datoriķu kursi",
-      img: `${base}/trails.jpg`,
+      img: `../../trails.jpg`,
       courses_fall: [
         {
           title: "Algoritmu teorija",
-          img: `../test.webp`,
+          img: `../../test.webp`,
           altText: "alt1",
           teaser: "Something something",
           description: "longer description",
@@ -95,7 +95,7 @@ export function load({ params }) {
         },
         {
           title: "Programmēšana I",
-          img: `../test.webp`,
+          img: `../../test.webp`,
           altText: "alt1",
           teaser: "Something something",
           description: "longer description",
@@ -103,7 +103,7 @@ export function load({ params }) {
         },
         {
           title: "Tīmekļa tehnoloģijas",
-          img: `../test.webp`,
+          img: `../../test.webp`,
           altText: "alt1",
           teaser: "Something something",
           description: "longer description",
@@ -150,7 +150,7 @@ export function load({ params }) {
       year_slug: "3",
       max_years: "4",
       name: "Datoriķu kursi",
-      img: `${base}/trails.jpg`,
+      img: `../../trails.jpg`,
       courses_fall: [],
       courses_spring: []
     },
@@ -159,7 +159,7 @@ export function load({ params }) {
       year_slug: "4",
       max_years: "4",
       name: "Datoriķu kursi",
-      img: `${base}/trails.jpg`,
+      img: `../../trails.jpg`,
       courses_fall: [],
       courses_spring: []
     },
@@ -168,7 +168,7 @@ export function load({ params }) {
       year_slug: "1",
       max_years: "3",
       name: "Geogrāfu kursi",
-      img: `${base}/trails.jpg`,
+      img: `../../trails.jpg`,
       courses_fall: [],
       courses_spring: []
     },
@@ -177,7 +177,7 @@ export function load({ params }) {
       year_slug: "2",
       max_years: "3",
       name: "Geogrāfu kursi",
-      img: `${base}/trails.jpg`,
+      img: `../../trails.jpg`,
       courses_fall: [],
       courses_spring: []
     },
@@ -186,7 +186,7 @@ export function load({ params }) {
       year_slug: "3",
       max_years: "3",
       name: "Geogrāfu kursi",
-      img: `${base}/trails.jpg`,
+      img: `../../trails.jpg`,
       courses_fall: [],
       courses_spring: []
     }
