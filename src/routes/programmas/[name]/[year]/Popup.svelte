@@ -63,6 +63,14 @@
     height: 100%;
     object-fit: cover;
   }
+  p{
+    font-size: 16px;
+    overflow: auto;
+    height: 60vh;
+  }
+  h1{
+    margin-bottom: 5px;
+  }
 
   @media(max-width: 800px){
     .popup{
@@ -70,10 +78,18 @@
     }
     .description{
       width: 100%;
+      padding: 10px;
     }
     img{
       width: 100%;
       height: 20%;
+    }
+    p{
+      max-width: 90%;
+      overflow: auto;
+      text-align: start;
+      height: 44vh;
+      padding-left: 10px;
     }
   }
   button.close{

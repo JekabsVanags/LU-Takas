@@ -55,10 +55,10 @@
 
   @media(max-width: 800px){
     #year-list{
-      padding-top: 10px;
+      position: sticky;
       flex-direction: column;
-      bottom: 100px;
       align-items: start;
+      bottom: -120px;
     }
   }
 

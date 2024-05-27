@@ -28,6 +28,7 @@
 		flex-direction: column;
 		justify-content: space-between;
 		margin: -8px;
+		width: 100vw;
 	}
 
 	div.dark-mode{

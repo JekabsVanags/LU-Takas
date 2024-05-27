@@ -36,7 +36,7 @@
 
   #description p{
     max-height: 200px;
-    overflow: scroll;
+    overflow: auto;
   }
 
   #description.light-mode{

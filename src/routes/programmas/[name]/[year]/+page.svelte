@@ -29,7 +29,7 @@
       mouseX = event.clientX;
     }
 
-    if (mouseX < 800) {
+    if (mouseX < innerWidth / 2) {
         fallContainer.scrollLeft -= 2; // Scroll left
     } else {
         fallContainer.scrollLeft += 2; // Scroll right
@@ -84,6 +84,13 @@
     height: 250px;
     width: 100vw;
   }
+
+  @media(max-width: 800px){
+    .scrollable{
+      overflow: auto;
+    }
+  }
+
   .subtitle.dark-mode{
     border-top: dashed #C3D898;;
   }

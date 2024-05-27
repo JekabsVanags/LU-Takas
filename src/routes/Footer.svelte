@@ -23,6 +23,10 @@
 	@media (max-width: 800px) {
 	.container {
 		flex-direction: column;
+		justify-content: center;
+		padding-left: 10%;
+		padding-right: 10%;
+
 	}
 
 	.section{
@@ -47,8 +51,8 @@
 	<div class="section">
 		<h1>Saziņai</h1>
 		<div>
-			<p>📧   epasts@epasts</p>
-			<p>📞   29222222</p>
+			<p>📧   jekabs.vanags2001@gmail.com</p>
+			<p>📞   29226470</p>
 		</div>
 	</div>
 
