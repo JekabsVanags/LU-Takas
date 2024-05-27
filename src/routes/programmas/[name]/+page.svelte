@@ -76,7 +76,7 @@
 </style>
 
 <div id="container">
-  <div id="image-div" style="background-image: url({base + data.img})">
+  <div id="image-div" style="background-image: url(..{base + data.img})">
     <div id="text-div">
       <h1>{data.name}</h1>
       <p>{data.description}</p>
