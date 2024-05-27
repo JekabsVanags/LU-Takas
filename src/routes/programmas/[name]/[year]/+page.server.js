@@ -87,7 +87,7 @@ export function load({ params }) {
       courses_fall: [
         {
           title: "Algoritmu teorija",
-          img: `../${base}/test.webp`,
+          img: `../test.webp`,
           altText: "alt1",
           teaser: "Something something",
           description: "longer description",
@@ -95,7 +95,7 @@ export function load({ params }) {
         },
         {
           title: "Programmēšana I",
-          img: `../${base}/test.webp`,
+          img: `../test.webp`,
           altText: "alt1",
           teaser: "Something something",
           description: "longer description",
@@ -103,7 +103,7 @@ export function load({ params }) {
         },
         {
           title: "Tīmekļa tehnoloģijas",
-          img: `../${base}/test.webp`,
+          img: `../test.webp`,
           altText: "alt1",
           teaser: "Something something",
           description: "longer description",
@@ -113,7 +113,7 @@ export function load({ params }) {
       courses_spring: [
         {
           title: "Matemātiskā analīze",
-          img: `../${base}/test.webp`,
+          img: `../test.webp`,
           altText: "alt1",
           teaser: "Something something",
           description: "longer description",
