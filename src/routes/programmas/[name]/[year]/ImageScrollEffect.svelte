@@ -26,7 +26,8 @@
   }
   img{
     height: 250px;
-    width: 450px;
+    width: 400px;
+    object-fit: cover;
   }
   h1, p{
     padding: 10px;
@@ -37,7 +38,7 @@
     bottom: 0;
     left: 0;
     height: 280px;
-    width: 450px;
+    width: 400px;
     z-index: 5;
     color: transparent;
     transition: color 0.5s ease, background-color 0.5s ease;

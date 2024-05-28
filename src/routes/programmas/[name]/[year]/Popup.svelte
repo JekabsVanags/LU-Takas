@@ -57,6 +57,7 @@
     flex-direction: column;
     align-items: start;
     padding-left: 30px;
+    text-align: start;
   }
   img{
     width: 30%;
