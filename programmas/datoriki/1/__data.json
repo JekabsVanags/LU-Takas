@@ -1,1 +1,1 @@
-{"type":"data","nodes":[null,{"type":"data","data":[{"programme_slug":1,"year_slug":2,"max_years":3,"name":4,"img":5,"courses_fall":6,"courses_spring":7},"datoriki","1","4","Datoriķu kursi","../../trails.jpg",[],[]],"uses":{"params":["name","year"]}}]}
+{"type":"data","nodes":[null,{"type":"data","data":[{"programme_slug":1,"year_slug":2,"max_years":3,"name":4,"img":5,"courses":6},"datoriki","1","4","Datoriķu kursi","../../trails.jpg",[]],"uses":{"params":["name","year"]}}]}
