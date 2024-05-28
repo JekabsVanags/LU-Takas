@@ -25,9 +25,15 @@
     position: relative;
   }
   img{
-    height: 250px;
-    width: 400px;
+    height: 320px;
+    width: 500px;
     object-fit: cover;
+    transition: height 0.3s ease-in-out, width 0.3s ease-in-out;
+  }
+  div:hover img{
+    height: 340px;
+    width: 520px;
+    transition: height 0.3s ease-in-out, width 0.3s ease-in-out;
   }
   h1, p{
     padding: 10px;
@@ -35,18 +41,20 @@
   .obscure{
     position: absolute;
     background-color: rgba(0, 0, 0, 0);
-    bottom: 0;
     left: 0;
-    height: 280px;
-    width: 400px;
+    height: 320px;
+    width: 500px;
     z-index: 5;
     color: transparent;
-    transition: color 0.5s ease, background-color 0.5s ease;
+    transition: color 0.5s ease, background-color 0.5s ease, height 0.3s ease-in-out, width 0.3s ease-in-out;
     border: none;
   }
-  .obscure:hover{
+  div:hover .obscure{
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
+    height: 340px;
+    width: 520px;
+    transition: height 0.3s ease-in-out, width 0.3s ease-in-out;
   }
 </style>
 

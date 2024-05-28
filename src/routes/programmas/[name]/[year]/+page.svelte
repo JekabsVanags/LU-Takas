@@ -29,9 +29,9 @@
       mouseX = event.clientX;
     }
 
-    if (mouseX < innerWidth / 2) {
+    if (mouseX < innerWidth / 2 - innerWidth*0.1) {
         fallContainer.scrollLeft -= 2; // Scroll left
-    } else {
+    } else if (mouseX > innerWidth / 2 + innerWidth*0.1){
         fallContainer.scrollLeft += 2; // Scroll right
     }
 
@@ -79,28 +79,18 @@
     display: flex;
     flex-direction: row;
     justify-content: start;
+    align-items: center;
     gap: 30px;
     overflow: hidden;
-    height: 250px;
+    height: 400px;
     width: 100vw;
+    margin: 30px 0px 50px 0px;
   }
 
   @media(max-width: 800px){
     .scrollable{
       overflow: auto;
     }
-  }
-
-  .subtitle.dark-mode{
-    border-top: dashed #C3D898;;
-  }
-  .subtitle.light-mode{
-    border-top: dashed #1C3144;
-  }
-  .subtitle p{
-    margin: 2px;
-    margin-bottom: 20px;
-    font-weight: 600;
   }
 
   #container {
@@ -120,30 +110,13 @@
 
 <div id="container" class={isDarkMode ? "dark-mode" : "light-mode"}>
   <h1>
-    {data.name}
+    {data.name} {data.year_slug}. gadā
   </h1>
   <div>
     <div class="scrollable" role="dialog" on:mouseenter={startScrolling} on:mouseleave={stopScrolling}>
-      {#each data.courses_fall as {img, altText, title, teaser, content}}
+      {#each data.courses as {img, altText, title, teaser, content}}
         <ImageScrollEffect image={img} altText={altText} title={title} teaser={teaser} content={content} stopScrolling={stopScrolling}/>
       {/each}
-    </div>
-    <div class="subtitle {isDarkMode ? "dark-mode" : "light-mode"}">
-      <p>
-        Rudens semestris
-      </p>
-    </div>
-  </div>
-  <div>
-    <div class="scrollable" role="dialog" on:mouseenter={startScrolling} on:mouseleave={stopScrolling}>
-      {#each data.courses_spring as {img, altText, title, teaser, content}}
-        <ImageScrollEffect image={img} altText={altText} title={title} teaser={teaser} content={content} stopScrolling={stopScrolling}/>
-      {/each}
-    </div>
-    <div class="subtitle {isDarkMode ? "dark-mode" : "light-mode"}">
-      <p>
-        Pavasara semestris
-      </p>
     </div>
   </div>
   

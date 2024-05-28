@@ -9,9 +9,7 @@ export function load({ params }) {
       max_years: "4",
       name: "Datoriķu kursi",
       img: `../../trails.jpg`,
-      courses_fall: [
-      ],
-      courses_spring: [
+      courses: [
       ]
     },
     {
@@ -20,9 +18,7 @@ export function load({ params }) {
       max_years: "4",
       name: "Datoriķu kursi",
       img: `../../trails.jpg`,
-      courses_fall: [
-      ],
-      courses_spring: [
+      courses: [
       ]
     },
     {
@@ -31,9 +27,8 @@ export function load({ params }) {
       max_years: "4",
       name: "Datoriķu kursi",
       img: `../../trails.jpg`,
-      courses_fall: [
-      ],
-      courses_spring: []
+      courses: [
+      ]
     },
     {
       programme_slug: "datoriki",
@@ -41,8 +36,7 @@ export function load({ params }) {
       max_years: "4",
       name: "Datoriķu kursi",
       img: `../../trails.jpg`,
-      courses_fall: [],
-      courses_spring: []
+      courses: []
     },
     {
       programme_slug: "geografi",
@@ -50,7 +44,7 @@ export function load({ params }) {
       max_years: "3",
       name: "Geogrāfu kursi",
       img: `../../trails.jpg`,
-      courses_fall: [
+      courses: [
         {
           title: "Cilvēku ģeogrāfjia",
           img: `../../test.webp`,
@@ -86,8 +80,7 @@ export function load({ params }) {
           teaser: "Šeit apmaldīties nav opcija...",
           content: "Ģeogrāfijas studiju programmas viens no vissvarīgākajiem balstiem. Kā jau nosaukumā minēts, kurss ir balstīts ap kartēm, visu kas ir saistīts ar kartogrāfijas vēsturi un kā mūsdienās kartes tiek veidotas. Kursa laikā iemācīsies, ka pašam izveidot karti izmantojot vairāks datorprogrammas."
         }
-      ],
-      courses_spring: []
+      ]
     },
     {
       programme_slug: "geografi",
@@ -95,23 +88,20 @@ export function load({ params }) {
       max_years: "3",
       name: "Geogrāfu kursi",
       img: `../../trails.jpg`,
-      courses_fall: [],
-      courses_spring: [
-        {
-          title: "Latvijas ģeogrāfija",
-          img: `../../geo-latvijas-geografija.jpeg`,
-          altText: "alt1",
-          teaser: "Es <3 tevi, Latvija!",
-          content: "Šis kurss ir tikai veltīts mūsu mīļajai Latvijai. Kursa laikā, detāli petīsi Latvijas fiziskās ģeogrāfijas attīstību, kā arī Latvijas iedzīvotāju demogrāfijas izmaiņas un attīstību. Uzzināsi, ka aptuveni viss ko Tu redzi apkārt Latvijā saistībā ar relfeju ir veidojusi milzīgs ledāja gabals."
-        },
-        {
-          title: "Paleoģeogrāfija",
-          img: `../../geo-paleogeografija.jpeg`,
-          altText: "alt1",
-          teaser: "No A līdz Z zemes vēsturē...",
-          content: "Šis kurss ir viss par zemes vēsturi, kopš tās paša sākuma. Kursa laikā Tu izzej cauri visiem zemes vēstures etapiem un apskaties, kā tajā laikā izskatījās pasaule, kas tajā brīdī auga un dzīvoja gan zem ūdens, gan virs ūdens."
-        }
-      ]
+      courses: [{
+        title: "Latvijas ģeogrāfija",
+        img: `../../geo-latvijas-geografija.jpeg`,
+        altText: "alt1",
+        teaser: "Es <3 tevi, Latvija!",
+        content: "Šis kurss ir tikai veltīts mūsu mīļajai Latvijai. Kursa laikā, detāli petīsi Latvijas fiziskās ģeogrāfijas attīstību, kā arī Latvijas iedzīvotāju demogrāfijas izmaiņas un attīstību. Uzzināsi, ka aptuveni viss ko Tu redzi apkārt Latvijā saistībā ar relfeju ir veidojusi milzīgs ledāja gabals."
+      },
+      {
+        title: "Paleoģeogrāfija",
+        img: `../../geo-paleogeografija.jpeg`,
+        altText: "alt1",
+        teaser: "No A līdz Z zemes vēsturē...",
+        content: "Šis kurss ir viss par zemes vēsturi, kopš tās paša sākuma. Kursa laikā Tu izzej cauri visiem zemes vēstures etapiem un apskaties, kā tajā laikā izskatījās pasaule, kas tajā brīdī auga un dzīvoja gan zem ūdens, gan virs ūdens."
+      }]
     },
     {
       programme_slug: "geografi",
@@ -119,7 +109,7 @@ export function load({ params }) {
       max_years: "3",
       name: "Geogrāfu kursi",
       img: `../../trails.jpg`,
-      courses_fall: [
+      courses: [
         {
           title: "Telpiskā analīze ilgstpējīgām pilsētām un sabiedrībai",
           img: `../../lu-test-image.jpg`,
@@ -127,8 +117,7 @@ export function load({ params }) {
           teaser: "Varēsi izmantot savas Rīdzinieka zināšanas...",
           content: "Šajā kursā detāli apskatīsi kādu pēc izvēles Latvijas valstspilsētu un analizēsi tās veidošanās īpašības un kādas ir iespējamas nākotnes uzlabojumi pilsētai, lai tā spētu dabai draudzīgi attīstīties."
         }
-      ],
-      courses_spring: []
+      ]
     }
   ]
 

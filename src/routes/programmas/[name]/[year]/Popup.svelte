@@ -34,7 +34,7 @@
 
   .popup.light-mode{
     color: #1C3144;
-    background-color: #EAF1DB;;
+    background-color: #F0F0F0;;
   }
   .popup{
     background-color: white;
@@ -65,12 +65,17 @@
     object-fit: cover;
   }
   p{
-    font-size: 16px;
+    text-indent: 20px;
+    font-size: 17px;
     overflow: auto;
     height: 60vh;
+    line-height: 30px;
   }
   h1{
+    text-align: center;
+    font-size: 32px;
     margin-bottom: 5px;
+    width: 95%;
   }
 
   @media(max-width: 800px){
@@ -90,7 +95,11 @@
       overflow: auto;
       text-align: start;
       height: 44vh;
-      padding-left: 10px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    h1{
+      text-align: center;
     }
   }
   button.close{

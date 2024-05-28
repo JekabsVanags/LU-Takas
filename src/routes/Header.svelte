@@ -2,7 +2,7 @@
   import { base } from "$app/paths";
   import { darkMode, section, setSelection, toggleDarkMode } from "$lib/stores.js";
 
-	let logo = "favicon.png";
+	let logo = "/favicon.png";
 	let selection;
 
 	let isDarkMode;
@@ -53,6 +53,16 @@
 		text-decoration: underline;
 	}
 
+	@media(max-width: 800px){
+		#menu{
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+	}
+
 	#logo{
 		height: 66px;
 	}
@@ -60,7 +70,7 @@
 	button{
     border-radius: 100px;
     border-width: 0px;
-    margin: 20px;
+    margin-left: 20px;
     z-index: 20;
 		padding: 10px;
 		width: 80px;
