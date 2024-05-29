@@ -99,6 +99,7 @@
     align-items: center;
     justify-items: space-between;
     padding-bottom: 30px;
+    padding-top: 30px;
   }
   #container.light-mode {
     color: black

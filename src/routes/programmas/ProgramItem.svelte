@@ -69,7 +69,7 @@
 
     img{
       width: 70vw;
-      height: auto;
+      height: 50vw;
     }
   }
 
