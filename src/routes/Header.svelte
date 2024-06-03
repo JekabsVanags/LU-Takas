@@ -1,8 +1,8 @@
 <script>
   import { base } from "$app/paths";
   import { darkMode, section, setSelection, toggleDarkMode } from "$lib/stores.js";
+  import Logo from "./Logo.svelte";
 
-	let logo = "/favicon.png";
 	let selection;
 
 	let isDarkMode;
@@ -95,7 +95,7 @@
 
 <div class="container">
 	<a href="." on:click={() => setSelection(0)}>
-		<img src={logo} alt="logo" id="logo"/>
+		<Logo/>
 	</a>
 	<nav id="menu">
 		<a on:click={() => setSelection(0)} class="{selection === 0 ? "menu-item-selected" : "menu-item"}" href="{base}/">Sākums</a>
