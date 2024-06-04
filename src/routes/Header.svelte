@@ -30,6 +30,7 @@
 		justify-content: space-between;
 		align-items: center;
 		box-shadow: 0px 0px 2cap black;
+		z-index: 2;
 	}
 
 	.menu-item{
@@ -70,7 +71,6 @@
     border-radius: 100px;
     border-width: 0px;
     margin-left: 20px;
-    z-index: 20;
 		padding: 10px;
 		width: 34px;
 		height: 34px;
@@ -85,7 +85,7 @@
 </style>
 
 <div class="container">
-	<a href="/" on:click={() => setSelection(0)}>
+	<a href="{base}/" on:click={() => setSelection(0)}>
 		<Logo/>
 	</a>
 	<nav id="menu">

@@ -2,6 +2,7 @@
   import ImageScrollEffect from "./ImageScrollEffect.svelte";
   import { darkMode } from "$lib/stores.js";
   import { base } from "$app/paths";
+  import BackgroundGraphics from "../../../backgroundGraphics.svelte";
 
   let isDarkMode;
 
@@ -59,12 +60,12 @@
     left: 0px;
     transition: left 0.5s ease;
   }
-  a.light-mode{
-    background-color: #1C3144;
+  a.dark-mode{
+    background-color: #164270;
     color: #EAF1DB;
     width: 30vw;
   }
-  a.dark-mode{
+  a.light-mode{
     background-color: #C3D898;
     color: #1C3144;
     width: 30vw;
@@ -82,6 +83,15 @@
     align-items: center;
     gap: 30px;
     overflow: hidden;
+    height: 400px;
+    width: 100vw;
+    margin: 30px 0px 50px 0px;
+  }
+
+  .center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 400px;
     width: 100vw;
     margin: 30px 0px 50px 0px;
@@ -108,19 +118,28 @@
   #container.dark-mode{
     color: #EAF1DB;
   }
+  h1.light-mode{
+    background-color: #F0F0F0;
+    z-index: 2;
+  }
+  h1.dark-mode{
+    background-color: #1C3144;
+    z-index: 2;
+  }
 </style>
 
+<BackgroundGraphics></BackgroundGraphics>
 <div id="container" class={isDarkMode ? "dark-mode" : "light-mode"}>
-  <h1>
+  <h1 class={isDarkMode ? "dark-mode" : "light-mode"}>
     {data.name} {data.year_slug}. gadā
   </h1>
   <div>
-    <div class="scrollable" role="dialog" on:mouseenter={startScrolling} on:mouseleave={stopScrolling}>
+    <div class={data.courses.length > 0 ? "scrollable" : "center"} role="dialog" on:mouseenter={startScrolling} on:mouseleave={stopScrolling}>
       {#each data.courses as {img, altText, title, teaser, content}}
         <ImageScrollEffect image={img} altText={altText} title={title} teaser={teaser} content={content} stopScrolling={stopScrolling}/>
       {/each}
       {#if data.courses.length <= 0}
-        <p>Nav kursu aprakstu</p>
+        <p>Nav kursu aprakstu. Ja vēlies papildināt šo sadaļu, padaloties ar savu pieredzi, raksti uz kājenē norādīto e-pastu!</p>
       {/if}
     </div>
   </div>

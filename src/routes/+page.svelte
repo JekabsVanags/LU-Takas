@@ -2,6 +2,7 @@
   import { base } from "$app/paths";
 
   import { darkMode, setSelection } from "$lib/stores.js";
+  import BackgroundGraphics from "./backgroundGraphics.svelte";
 
   let isDarkMode;
   let img = "trails.jpg";
@@ -21,6 +22,15 @@
     background-position: center; 
     background-size: cover;
   }
+
+  @media(max-height: 800px){
+    #image-div{
+      margin-top: 40px;
+      margin-bottom: 40px;
+      height: 400px;
+    }
+  }
+
 
   #text-div {
     display: flex;
@@ -74,9 +84,14 @@
     transition: margin-left 0.5s ease;
   }
 
+  #container{
+    z-index: 2;
+  }
+
 </style>
 
-<div>
+<BackgroundGraphics></BackgroundGraphics>
+<div id="container">
   <div id="image-div" style="background-image: url({img})">
     <div id="text-div">
       <h1>SVEIKS!</h1>

@@ -14,6 +14,11 @@
       height: fit-content;
     }
   }
+  @media(max-height: 770px){
+    #container{
+      height: calc(100vh + 200px);
+    }
+  }
 
   #image-div{
     display: flex;
@@ -61,6 +66,23 @@
       bottom: 100px;
     }
   }
+  @media(max-height: 900px){
+    #year-list{
+      bottom: 50px;
+    }
+    #image-div{
+      margin-top: 20px;
+      height: 400px;
+    }
+  }
+
+  @media(max-height: 770px){
+    #year-list{
+      margin-top: 30px;
+      position: initial;
+    }
+  }
+
 
   h1 {
     margin: 0px;

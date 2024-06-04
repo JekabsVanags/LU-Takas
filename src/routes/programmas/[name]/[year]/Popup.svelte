@@ -88,7 +88,7 @@
     }
     img{
       width: 100%;
-      height: 20%;
+      height: 140px;
     }
     p{
       max-width: 90%;
@@ -96,7 +96,7 @@
       text-align: start;
       height: 44vh;
       padding-left: 15px;
-      padding-right: 15px;
+      padding-right: 25px;
     }
     h1{
       text-align: center;

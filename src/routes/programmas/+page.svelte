@@ -18,7 +18,7 @@
 <div class="container">
   <ProgramItem 
   reversed={1} 
-  image = "lu-raina-bulvaris.JPG"
+  image = "lu-raina-bulvaris.jpg"
   imageAlt = "Latvijas Universitātes ēka raiņa bulvārī, kurā noteik lekcijas datorzinātņu studentiem, ap kuru pulcējušies studenti."
   title = "Datorzinātņu bakalaurs"
   link = "{base}/programmas/datoriki"
@@ -26,7 +26,7 @@
   />
   <ProgramItem 
   reversed={0} 
-  image = "lu-dabas-maja.jpeg"
+  image = "lu-dabas-maja.jpg"
   imageAlt = "Latvijas Universitātes dabas māja, kurā notiek ģeogrāfijas studijas."
   title = "Ģeogrāfijas bakalaurs"
   link = "{base}/programmas/geografi"
@@ -34,10 +34,10 @@
   />
   <ProgramItem 
   reversed={1} 
-  image = "lu-zinatnu-maja.jpeg"
+  image = "lu-zinatnu-maja.jpg"
   imageAlt = "Latvijas Universitātes zinātņu māja, kurā notiek medicīnas studijas."
-  title = "Medicīnas bakalaurs"
+  title = "Ārstniecības bakalaurs"
   link = "{base}/programmas/mediki"
-  description= "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus  velit mauris, eu dapibus mauris lobortis a. Nulla luctus justo diam, vel  cursus purus tempor id. Etiam efficitur risus quis odio consectetur, et  malesuada tellus condimentum. Aliquam in turpis quis augue laoreet  commodo. Morbi egestas, mauris id eleifend aliquet, tortor ex eleifend  ante, quis sollicitudin mi neque sit amet ante. Aliquam id pretium ex.  Aliquam quis orci in quam condimentum feugiat id eget nisl. Donec in  dapibus purus. Nam non dui leo. "
+  description= "Ārsti mācās Latvijas Universitātes zinātņu mājā. Mācību programmu „Arstniecība” pārrauga tās direktore Lekt. Ina Mežiņa-Mamajeva. Šajā programmā mācās visi mūsu nākotneš ģimenes ārsti, ķirurgi un visi pārējie speciālisti, ko var sastapt slimnīcas gaiteņos."
   />
 </div>

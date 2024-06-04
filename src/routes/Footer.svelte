@@ -19,6 +19,10 @@
 		flex-direction: column;
 		width: 40%;
 	}
+	.section p{
+		padding: 0px;
+		margin: 0px;
+	}
 
 	@media (max-width: 800px) {
 	.container {
@@ -26,11 +30,12 @@
 		justify-content: center;
 		padding-left: 10%;
 		padding-right: 10%;
-
+		z-index: 2;
 	}
 
 	.section{
 		width: 80%;
+		margin-top: 20px;
 	}
 }
 
@@ -57,6 +62,8 @@
 	</div>
 
 	<div class="section">
-		<p>Mājaslapa izstrādāta studiju kursa "Tīmekļa dizaina pamati" ietvaros. Visi izmantotie teksti un attēli ir no studenta personīgajiem arhīviem. Darba izstrādātājs: Jēkabs Vanags. Tekstu par ģeogrāfiem autori: Kārlis Plostnieks, Una Ozola.</p>
+		<p>Mājaslapa izstrādāta studiju kursa "Tīmekļa dizaina pamati" ietvaros. Visi izmantotie attēli ir no studenta personīgajiem arhīviem.</p>
+		<p>Darba izstrādātājs, datorzinātņu kursu aprakstu autors: Jēkabs Vanags.</p>
+		<p>Ģeogrāfijas kursu apraksti: Kārlis Plostnieks, Una Ozola.</p>
 	</div>
 </div>
