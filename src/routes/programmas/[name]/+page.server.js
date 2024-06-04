@@ -18,7 +18,7 @@ export function load({ params }) {
       slug: "mediki",
       name: "Medicīnas studenti...",
       description: "Mediķi... Tie kas pārdevuši savu dvēseli uz 6 gadiem + rezidentūru. Bet ja tu sevī jūti aicinājumu palīdzēt cilvēkiem, vai ceri uz labu algu pēc studiju pabeigšanas, varbūt ir tā vērts pamēģināt!",
-      img: `../test.webp`,
+      img: `../lu-zinatnu-maja.jpeg`,
       years: 0
     },
   ]

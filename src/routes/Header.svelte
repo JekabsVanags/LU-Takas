@@ -1,7 +1,8 @@
 <script>
   import { base } from "$app/paths";
   import { darkMode, section, setSelection, toggleDarkMode } from "$lib/stores.js";
-  import Logo from "./Logo.svelte";
+  import Logo from "./svg/Logo.svelte";
+  import SwitchIcon from "./svg/SwitchIcon.svelte";
 
 	let selection;
 
@@ -73,33 +74,27 @@
     margin-left: 20px;
     z-index: 20;
 		padding: 10px;
-		width: 80px;
+		width: 34px;
+		height: 34px;
 		font-weight: 600;
-  }
-  button.light-mode{
-    background-color: #1C3144;
-		color: #f5ffe0;
-  }
-  button:hover.light-mode{
-    background-color: #061c2e;
-  }
-  button.dark-mode{
-    background-color: #C3D898;
+		background-color: #1C3144;
 		color: #061c2e;
   }
-  button:hover.dark-mode{
-    background-color: #f5ffe0;
+  button:hover{
+    background-color: #061c2e;
   }
-	
+
 </style>
 
 <div class="container">
-	<a href="." on:click={() => setSelection(0)}>
+	<a href="/" on:click={() => setSelection(0)}>
 		<Logo/>
 	</a>
 	<nav id="menu">
 		<a on:click={() => setSelection(0)} class="{selection === 0 ? "menu-item-selected" : "menu-item"}" href="{base}/">Sākums</a>
 		<a on:click={() => setSelection(1)} class="{selection === 1 ? "menu-item-selected" : "menu-item"}" href="{base}/programmas">Programmas</a>
-		<button on:click={toggleDarkMode} class={isDarkMode ? "dark-mode" : "light-mode"}>{isDarkMode ? "Gaišais" : "Tumšais"}</button>
+		<button on:click={toggleDarkMode} class={isDarkMode ? "dark-mode" : "light-mode"}>
+		<SwitchIcon isDarkMode={isDarkMode}></SwitchIcon>
+		</button>
 	</nav>
 </div>

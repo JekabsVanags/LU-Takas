@@ -79,17 +79,17 @@
 <div>
   <div id="image-div" style="background-image: url({img})">
     <div id="text-div">
-      <h1>LU TAKAS</h1>
+      <h1>SVEIKS!</h1>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus  velit mauris, 
-        eu dapibus mauris lobortis a. Nulla luctus justo diam, vel  cursus purus tempor id. 
-        Etiam efficitur risus quis odio consectetur, et  malesuada tellus condimentum. Aliquam 
-        in turpis quis augue laoreet  commodo. Morbi egestas, mauris id eleifend aliquet, tortor 
-        ex eleifend  ante, quis sollicitudin mi neque sit amet ante. Aliquam id pretium ex.  
-        Aliquam quis orci in quam condimentum feugiat id eget nisl. Donec in  dapibus purus. Nam non dui leo. 
+        Katram studentam un studēt gribētājam ir sava taka, ko viņš vai viņa iet dienu no dienas. 
+        Katrs ceļš ir unikāls, un katra pieredze ir vērtīga. Šī mājaslapa ir vieta, kur Latvijas 
+        Universitātes studenti var dalīties ar savu pieredzi un zināšanām, godīgi un cilvēcīgā valodā 
+        pastāstot, kas tevi sagaidīs, izvēloties kādu no LU piedāvātajām studiju programmām. Tāpēc, 
+        ja apsver iespēju studēt Latvijas Universitātē, varbūt vispirms apskati, ko var pastāstīt tie,
+        kas šos ceļus gājuši pirms tevis!
       </p>
       <a href="{base}/programmas" on:click={() => setSelection(1)} class={isDarkMode ? "dark-mode" : "light-mode"}>
-        Apskatīt atsauksmes!
+        Apskatīt studiju programmas!
       </a>
     </div>
   </div>

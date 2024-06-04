@@ -87,6 +87,7 @@
     margin: 30px 0px 50px 0px;
   }
 
+
   @media(max-width: 800px){
     .scrollable{
       overflow: auto;
@@ -118,6 +119,9 @@
       {#each data.courses as {img, altText, title, teaser, content}}
         <ImageScrollEffect image={img} altText={altText} title={title} teaser={teaser} content={content} stopScrolling={stopScrolling}/>
       {/each}
+      {#if data.courses.length <= 0}
+        <p>Nav kursu aprakstu</p>
+      {/if}
     </div>
   </div>
   
