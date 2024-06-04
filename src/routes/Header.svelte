@@ -64,9 +64,7 @@
 		}
 	}
 
-	#logo{
-		height: 66px;
-	}
+
 
 	button{
     border-radius: 100px;
