@@ -1,6 +1,5 @@
 <script>
   import { darkMode } from "$lib/stores.js";
-  import DarkModeToggle from "./DarkModeToggle.svelte";
   import Footer from "./Footer.svelte";
 	import Header from "./Header.svelte";
 
@@ -44,6 +43,5 @@
 <div class={isDarkMode ? "dark-mode" : "light-mode"}>
 	<Header></Header>
 	<slot />
-	<DarkModeToggle></DarkModeToggle>
 	<Footer></Footer>
 </div>

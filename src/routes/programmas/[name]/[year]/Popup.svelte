@@ -94,7 +94,7 @@
       max-width: 90%;
       overflow: auto;
       text-align: start;
-      height: 44vh;
+      height: 50%;
       padding-left: 15px;
       padding-right: 25px;
     }
