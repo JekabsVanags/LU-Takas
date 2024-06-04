@@ -85,6 +85,7 @@
     .description{
       width: 100%;
       padding: 10px;
+      overflow: auto;
     }
     img{
       width: 100%;
@@ -92,9 +93,7 @@
     }
     p{
       max-width: 90%;
-      overflow: auto;
       text-align: start;
-      height: 50%;
       padding-left: 15px;
       padding-right: 25px;
     }
