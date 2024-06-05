@@ -18,6 +18,7 @@
   }
   .tr{
     position: absolute;
+    top: 0px;
     right: 0px;
     overflow: hidden;
   }
